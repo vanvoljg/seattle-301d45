@@ -181,18 +181,27 @@ Student.prototype.scope = function() {
   console.log(this);
 };
 
-// TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(joe.scope());
+console.log(joe.scope());
 
 Student.prototype.scopeArrow = () => console.log(this);
 
-// TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(joe.scopeArrow());
+console.log(joe.scopeArrow());
 
-// TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-// 
+//
+// Here, 'this' refers to the 'joe' object, because the .scope method was attached
+// to the constructor's prototype.
+// undefined at end of run... must be because .scope() method has no return.
+//
+//
 // 2. What is "this" when joe.scopeArrow() is invoked?
 //
+// In this case, 'this' refers to the window object.
+//
+//
 // 3. Explain why "this" is different when an arrow function is used.
-// 
+//
+// console logs the window object, because that's what an arrow function's 'this'
+// keyword refers to when used inside an arrow function which is called from the
+// global scope. Arrow functions have no 'this' keyword, and referencing it bubbles
+// up until it finds the nearest non-arrow function.
