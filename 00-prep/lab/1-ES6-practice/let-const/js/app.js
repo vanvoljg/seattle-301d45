@@ -36,8 +36,8 @@ function displayPics(){
     }
   }
   console.log(rando);
-  // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the variable declaration from `var to `let`.
-  // PUT YOUR RESPONSE IN THIS COMMENT
+  // console.log here is trying to reference a variable which was declared inside the displayPics() function scope.
+  // It is not accessible outside the block ( {...} ) in which it was declared, because that's how scope works.
   console.log(viewed);
 
   for (let i = 0; i < 3; i++){
