@@ -98,25 +98,38 @@ console.log('Hello from the new object function', newObject(['hi', 'hello', 'are
 // Write your solutions on a single line wherever possible.
 
 
+// let sum = function(a, b, c, d) {
+//   return a + b + c + d;
+// };
 
 let sum = (a, b, c, d) => a + b + c + d;
 
 console.log(sum(1, 2, 3, 4));
 
 
+
+// let objectLit = function() {
+//   return {
+//     key1: 'value1',
+//     key2: 'value2',
+//     key3: 'value3',
+//   };
+// };
+
 let objectLit = () => ({key1: 'value1', key2: 'value2', key3: 'value3'});
 
 console.log(objectLit());
 
 
-let sumAndProduct = function(a, b) {
-  let sum = a + b;
-  let product = a * b;
-  return [sum, product];
-};
+// let sumAndProduct = function(a, b) {
+//   let sum = a + b;
+//   let product = a * b;
+//   return [sum, product];
+// };
 
-// TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(sumAndProduct(3, 9));
+let sumAndProduct = (a, b) => [a + b, a * b];
+
+console.log(sumAndProduct(3, 9));
 
 
 let message = function(name) {
