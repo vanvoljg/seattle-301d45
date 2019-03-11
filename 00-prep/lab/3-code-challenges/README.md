@@ -14,21 +14,35 @@ After lecture, get together with your partner and read through the daily set of 
 
 ## GitHub repository
 
-Create a new repository on GitHub named `data-structures-and-algorithms`. You will continue to expand on this repository in your 401 course. The repository should have a root `README.md` file with an overview of the purpose of the repository. Within the repository, create a folder named `code-challenges`. Within this folder, create another folder named `301` to track your solutions throughout this course.
+Create a new repository on GitHub named `data-structures-and-algorithms`. You will continue to expand on this repository in your 401 course. The repository should have a root `README.md` file with an overview of the purpose of the repository. 
 
-Work on a new branch for each daily set of challenges. For example, for today's set of challenges you can make a new branch with the command `git checkout -b for-each`. 
+After you clone the folder copy the `package.json`, `eslintrc.json`, and `.gitignore` files from the starter-code folder into the root folder of the repository, then run this command, which will install some necessary utilities for you.
 
-Within your repository, you will create a separate folder for each set of challenges. Go ahead and make a folder named `for-each` for today's set of challenges.
+* `npm install`
 
-At the end of lecture each day, your instructor will publish the challenges. Copy the contents of the file into your repository and work on the individual problems for the day. Remember to add, commit, and push regularly.
+Within the repository, create a folder named `code-challenges`. Within this folder, create another folder named `301` to track your solutions throughout this course.
 
-When you finish the assignment each day, make a new pull request from your daily challenge branch to your master branch and submit the URL in Canvas. You can submit a link to a pull request even if the pull request is closed.
+You will work on a new branch for each daily set of challenges. For example, for today's set of challenges you can make a new branch with the command `git checkout -b for-each`. 
 
-## Jest Configuration
+Within your repository, you will create a separate folder for each set of challenges. Go ahead and make a folder named `for-each` for today's set of challenges.  When you're done, you should have a directory structure like this:
+
+```sh
+data-structures-and-algorithms (repository)
+├──code-challenges
+│  └── 301
+│      └── for-each
+├── .eslintrc.json
+├── .gitignore
+├── package-lock.json (added during `npm install`)
+├── package.json
+└── README.md
+```
+
+At the end of lecture each day, a new challenge will be published in Canvas. Copy the contents of the file into your repository and work on the individual problems for the day. *It's a good practice to add and commit regularly as you finish each problem in the day's challenge.*  When you are finished, add, commit, and push your branch.
 
 Your code challenge files are divided into two sections: challenges and tests. You will need to add your own solutions to each challenge but should not modify the tests in any way. These tests will ensure that your solution is meeting the requirements of each challenge. Even though you may not modify the tests, you are encouraged to read them to see what is being evaluated.
 
-As part of your prework for this course, you installed a testing platform called Jest globally so that it is available to all of your test files. In order to run the tests, Jest looks for a configuration file. Copy the `jest.config.js` file from this folder into the root level of your code challenges repository. As long as it is in the root level of the repository, you do not need to include this configuration file in any of the folders.
+When you finish the assignment each day, make a new pull request from your daily challenge branch to your master branch and submit the URL in Canvas. You can submit a link to a pull request even if the pull request is closed.
 
 ## Submission
 
