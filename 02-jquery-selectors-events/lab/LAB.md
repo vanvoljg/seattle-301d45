@@ -15,7 +15,9 @@ lab-02-repository
 ├── .gitignore
 ├── css
 │   ├── reset.css
-│   └── styles.css
+│   ├── base.css
+│   ├── layout.css
+│   └── module.css
 ├── data
 │   └── page-1.json
 ├── index.html
