@@ -42,7 +42,7 @@ function displayMap(location) {
   $('section, div').removeClass('hide');
 
   $('#map').attr('src', `https://maps.googleapis.com/maps/api/staticmap?center=${location.latitude}%2c%20${location.longitude}&zoom=13&size=600x300&maptype=roadmap
-  &key=AIzaSyDY694GbtA2byuzWsHxoJI07tq5ey1-X70`);
+  &key=${SPECIAL}`);
 }
 
 function getResource(resource, location) {
