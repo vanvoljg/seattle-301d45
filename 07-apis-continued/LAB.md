@@ -8,8 +8,6 @@
 
 [Dark Sky API Docs](https://darksky.net/dev/docs)
 
-[Yelp API Docs](https://www.yelp.com/developers/documentation/v3/business_search)
-
 [Meetup API Docs](https://www.meetup.com/meetup_api/)
 
 
