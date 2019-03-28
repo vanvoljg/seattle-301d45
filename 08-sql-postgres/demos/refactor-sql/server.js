@@ -89,7 +89,7 @@ function searchToLatLong(request, response) {
             if (!data.body.results.length) { throw 'NO DATA' }
 
             // If there is data...
-            else { // query = search string entered by user
+            else {
               let location = new Location(query, data.body.results[0]);
 
               // Create a query string to add the Location data to SQL
@@ -136,9 +136,7 @@ function Location(query, location) {
 
 // WEATHER REFACTORED FOR SQL
 function getWeather(request, response) {
-  // After location object is created, internal query becomes that object's ID
-  // Ensures we only check the unique data for that particular location
-  let query = request.query.data.id; // this is the ID from the location object
+  let query = request.query.data.id;
   let sql = `SELECT * FROM weathers WHERE location_id=$1;`
   let values = [query];
 
