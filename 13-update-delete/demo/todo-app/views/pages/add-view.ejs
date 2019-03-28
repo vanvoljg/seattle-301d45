@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('../layout/head') %>
+  </head>
+  <body>
+    <header>
+      <%- include('../layout/header') %>
+    </header>
+    
+    <main>
+      <section class="create-view container">
+        <%- include('form', {formAction: 'create', task: ''}) %>
+      </section>
+    </main>
+  </body>
+</html>
